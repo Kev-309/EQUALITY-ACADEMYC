@@ -1,0 +1,212 @@
+/*boton*/
+.back-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: aliceblue;
+    text-decoration: dashed;
+    border-radius: 8px;
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+/* Estilos para el encabezado con imagen de fondo */
+.main-header {
+    background-image: url('gg1.png'); /* Ruta a tu imagen */
+    background-size: 500px; /* La imagen cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    Color: #000066; /* Color de texto */
+    text-align: center;
+    padding: 100px 20px; /* Ajusta el padding según necesites */
+    position: relative; /* Necesario si quieres añadir más elementos encima */
+}
+
+.main-header h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade sombra al texto para mejor legibilidad */
+}
+
+/* Encabezado imgen*/
+.header-image {
+    max-width: 500px;
+    height: 500px;
+    margin-top: 10px;
+}
+
+/* Slogan principal */
+.main-slogan {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+/* Navegación principal */
+.main-navigation {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    color: #0056b3;
+}
+
+/* Pie de página */
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.main-footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* CSS para la alineación horizontal de las cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en la siguiente línea si no hay suficiente espacio */
+    gap: 16px; /* Espacio entre las tarjetas */
+    justify-content: center; /* Alinea las tarjetas al centro */
+}
+
+.card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    max-width: 300px; /* Ancho máximo de cada tarjeta */
+    flex: 1 1 300px; /* Permite que las tarjetas crezcan o se encojan */
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    max-width: 300px;
+    flex: 1 1 300px;
+    overflow: hidden; /* Para asegurarte de que los bordes redondeados también se apliquen a la imagen */
+}
+
+.card img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px 8px 0 0; /* Opcional: añade bordes redondeados en la parte superior de la imagen */
+    margin-bottom: 16px; /* Espacio debajo de la imagen antes del contenido */
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    margin: 8px 0;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: #0056b3;
+}
+
+.back-button {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo tabla*/
+.recommendation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.recommendation-table th, .recommendation-table td {
+    border: 1px solid #2d2736;
+    padding: 20px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.recommendation-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.recommendation-table td ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.recommendation-table td ul li {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .recommendation-table, .recommendation-table th, .recommendation-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .recommendation-table th, .recommendation-table td {
+        padding: 15px;
+        text-align: left;
+    }
+}
